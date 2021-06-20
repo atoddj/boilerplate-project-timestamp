@@ -26,7 +26,7 @@ app.get("/api/hello", function (req, res) {
 
 app.get("/api", (req, res) => {
   res.json({
-    unix: Math.floor(new Date().getTime()/1000),
+    unix: Math.floor(new Date().getTime()),
     utc: new Date().toUTCString()
   })
 });
